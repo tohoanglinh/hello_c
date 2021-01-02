@@ -1,5 +1,6 @@
 language: c
 script:
-  - gcc -coverage -O0 main.c -o test
-  - ./test
-  - gcov main.c
+  # - gcc -coverage -O0 main.c -o test
+  - gcc -o test main.c src/myLib.c -Iinc
+  # - ./test
+  # - gcov main.c
