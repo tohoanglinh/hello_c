@@ -4,7 +4,9 @@ script:
   # - gcc -o test main.c src/myLib.c -Iinc
   # - ./test
   # - gcov main.c
-  - cmake --version
   - cmake -G "Unix Makefiles" .
   - make -j4
   - ./helloC
+  - gcovr --version
+  - gcov CMakeFiles/HelloC.dir/main.c.obj
+  - gcov CMakeFiles/HelloC.dir/src/myLib.c.obj

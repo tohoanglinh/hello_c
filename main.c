@@ -9,7 +9,7 @@ int main(void)
 
     printf("%d", mySum(10));
 
-    assert(mySum(10) == 25);
+    assert(mySum(10) == 20);
 
     printf("Hello World 1");
 
