@@ -1,6 +1,10 @@
 language: c
 script:
   # - gcc -coverage -O0 main.c -o test
-  - gcc -o test main.c src/myLib.c -Iinc
+  # - gcc -o test main.c src/myLib.c -Iinc
   # - ./test
   # - gcov main.c
+  - cmake --version
+  - cmake -G "Unix Makefiles" .
+  - make -j4
+  - ./helloC
