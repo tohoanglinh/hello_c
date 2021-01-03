@@ -1,17 +1,12 @@
 language: c
 before_install:
   - pip install -U pip # upgrade pip
-  - sudo pip install gcovr
+  - sudo pip install gcovr # install gcovr
 script:
-  # - gcc -coverage -O0 main.c -o test
-  # - gcc -o test main.c src/myLib.c -Iinc
-  # - ./test
-  # - gcov main.c
   - cmake -G "Unix Makefiles" .
   - make -j4
-  - ./helloC
-  - ls -R
-  - gcovr --version
+  - ./helloC  # run app
+  - ls -R   # list all with recursive view
+  - gcovr -r .
   - gcovr -r . --html --html-details -o example-html.html
-  - gcov CMakeFiles/HelloC.dir/main.c.obj
-  - gcov CMakeFiles/HelloC.dir/src/myLib.c.obj
+  
