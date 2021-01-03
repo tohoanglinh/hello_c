@@ -7,5 +7,15 @@ int mySum(int number)
 
 int myFunc(int number)
 {
-    return (number * 3);
+    int ret = 0;
+    if (number != 10)
+    {
+        ret = 100;
+    }
+    else
+    {
+        ret = 20;
+    }
+    
+    return (ret >> number);
 }
