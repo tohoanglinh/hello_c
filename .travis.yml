@@ -10,6 +10,8 @@ script:
   - cmake -G "Unix Makefiles" .
   - make -j4
   - ./helloC
+  - ls -R
   - gcovr --version
+  - gcovr -r . --html --html-details -o example-html.html
   - gcov CMakeFiles/HelloC.dir/main.c.obj
   - gcov CMakeFiles/HelloC.dir/src/myLib.c.obj
