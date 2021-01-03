@@ -5,13 +5,11 @@
 
 int main(void)
 {
-    printf("Hello World");
-
-    printf("%d", mySum(10));
+    printf("%d\n", mySum(10));
 
     assert(mySum(10) == 20);
 
-    printf("Hello World 1");
+    printf("%d\n", myFunc(100));
 
     return 0;
 }

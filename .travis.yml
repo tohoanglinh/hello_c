@@ -7,6 +7,7 @@ script:
   - make -j4
   - ./helloC  # run app
   # - ls -R   # list all with recursive view
-  - gcovr -r .
+  - gcovr -r .  # lines coverage
+  - gcovr -r . --branches   # branches coverage
   # - gcovr -r . --html --html-details -o example-html.html
   
