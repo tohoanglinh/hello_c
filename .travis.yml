@@ -1,4 +1,7 @@
 language: c
+before_install:
+  - pip install -U pip # upgrade pip
+  - sudo pip install gcovr
 script:
   # - gcc -coverage -O0 main.c -o test
   # - gcc -o test main.c src/myLib.c -Iinc
