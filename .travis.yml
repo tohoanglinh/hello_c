@@ -6,7 +6,7 @@ script:
   - cmake -G "Unix Makefiles" .
   - make -j4
   - ./helloC  # run app
-  - ls -R   # list all with recursive view
+  # - ls -R   # list all with recursive view
   - gcovr -r .
-  - gcovr -r . --html --html-details -o example-html.html
+  # - gcovr -r . --html --html-details -o example-html.html
   

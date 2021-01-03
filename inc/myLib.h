@@ -3,4 +3,6 @@
 
 int mySum(int number);
 
+int myFunc(int number);
+
 #endif /* MYLIB_H_ */
